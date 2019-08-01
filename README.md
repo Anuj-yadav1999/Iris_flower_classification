@@ -5,8 +5,10 @@
 
 import numpy as np
 import pandas as pd
+
 from sklearn.metrics import confusion_matrix
 from sklearn.neighbors import KNeighborsClassifier
+
 from sklearn import datasets
 
 # The dataset is also availabe in sklearn library
@@ -28,9 +30,11 @@ a = knn.fit(X_train,Y_train)
 
 # For testing the data
 y_pred = a.predict(X_test)
+
 print("Pred====",y_pred)
 
 
 # Here the important thing "confusion matrix" to evaluate the output easily
 cm = confusion_matrix(Y_test,y_pred)
+
 print("The confusion metrix==\n",cm)
