@@ -4,9 +4,11 @@
 # Now importing all libraries
 
 import numpy as np
+
 import pandas as pd
 
 from sklearn.metrics import confusion_matrix
+
 from sklearn.neighbors import KNeighborsClassifier
 
 from sklearn import datasets
